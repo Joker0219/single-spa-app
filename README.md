@@ -3,6 +3,7 @@ just a single single spa demo
 
 ## 1. 文档结构
 `src`
+
 `src\myapp`
 `src\myapp\myapp.app.js` 一个简单的纯Javascript实例；
 `src\react`
