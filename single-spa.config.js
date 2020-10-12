@@ -9,7 +9,7 @@ import * as singleSpa from 'single-spa'
 singleSpa.registerApplication(
   'myapp',
   () => import('./src/myapp/myapp.app.js'),
-  () => location.pathname === "/myapp"  ? true : false
+  () => true
 );
 
 singleSpa.registerApplication(

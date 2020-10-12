@@ -1,7 +1,23 @@
 <html>
   <body>
-    <div id="react"></div>
-    <div id="vue"></div>
+    <div id="thirdPartyApp">
+      <div id="react"></div>
+      <div id="vue"></div>
+    </div>
     <script src="/dist/single-spa.config.js"></script>
+    <script src="node_modules/cesium/Build/Cesium/Cesium.js"></script>
+    <link type="text/css" rel="styleSheet" href="node_modules/cesium/Build/Cesium/Widgets/widgets.css"></link>
+    <div id="cesiumContainer"></div>
+    <style>
+      #thirdPartyApp{
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        z-index: 2;
+        width: 300px;
+        height: 200px;
+        background-color: rgba(200, 200, 200, 0.8); 
+      }
+    </style>
   </body>
 </html>

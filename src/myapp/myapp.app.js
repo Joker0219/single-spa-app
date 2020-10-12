@@ -1,10 +1,13 @@
 import $ from 'jquery'
+// import createHistory from 'history/browser'
+// var history = createHistory();
+// import Cesium from 'cesium/Build/Cesium/Cesium'
 
 export function bootstrap(props){
     return Promise
     .resolve()
     .then(() => {
-        $("<div id='myapp'><div>").appendTo("body");
+        var viewer = new Cesium.Viewer('cesiumContainer');
     })
 }
 
@@ -12,7 +15,10 @@ export function mount(props){
     return Promise
     .resolve()
     .then(() => {
-        $("#myapp").html("<h1>my app is mounted</h1>")
+        $("<button>To React</button>").appendTo("#thirdPartyApp")
+        .click(() => {
+            window.open("react");
+        })
     })
 }
 
